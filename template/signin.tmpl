@@ -1,0 +1,25 @@
+{{define "page.title"}}Web5 - Sign In{{end}}
+
+{{define "body"}}
+
+{{if .Flash.Errors}}
+<ul>
+  {{range .Flash.Errors}}
+  <li>{{.}}</li>
+  {{end}}
+</ul>
+{{end}}
+
+<form method="POST">
+  <input name="email" placeholder="Email">
+  <input name="password" type="password" placeholder="Password">
+  <button>Sign In</button>
+</form>
+
+{{end}}
+
+{{define "style"}}
+{{end}}
+
+{{define "script"}}
+{{end}}

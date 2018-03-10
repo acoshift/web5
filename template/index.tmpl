@@ -1,0 +1,18 @@
+{{define "page.title"}}Web5{{end}}
+
+{{define "body"}}
+
+<h1>Welcome to Web5</h1>
+{{if .IsSignIn}}
+<a href="{{route "signout"}}">Sign Out</a>
+{{else}}
+<a href="{{route "signin"}}">Sign In</a>
+{{end}}
+
+{{end}}
+
+{{define "style"}}
+{{end}}
+
+{{define "script"}}
+{{end}}
